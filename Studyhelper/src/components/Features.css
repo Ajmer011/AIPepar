@@ -1,0 +1,105 @@
+/* Full page layout */
+.features-page {
+    height: 100vh;
+    width: 1250px;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #31add6, #f3e5f5);
+    padding: 80px 20px 60px;
+    color: #111;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+  
+  /* Back Button Styling */
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(7, 6, 6);
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+  }
+  
+  .back-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(-5px);
+  }
+  
+  /* Card Common Styling */
+  .feature-card {
+    background: linear-gradient(135deg, #31add6, #f3e5f5);
+    border-radius: 20px;
+    padding: 30px 25px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #111;
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(17, 6, 6, 0.2);
+  }
+  
+  /* Section Titles */
+  .feature-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #111;
+    text-shadow: 1px 1px 2px #aaa;
+  }
+  
+  /* Feature Description */
+  .feature-description {
+    color: #111;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Features List */
+  .feature-list {
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #111;
+  }
+  
+  .feature-list li {
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .feature-card {
+      padding: 25px 20px;
+    }
+  
+    .feature-title {
+      font-size: 22px;
+    }
+  
+    .feature-description {
+      font-size: 15px;
+    }
+  
+    .feature-list {
+      font-size: 15px;
+    }
+  }
+  

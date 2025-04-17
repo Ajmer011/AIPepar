@@ -1,0 +1,163 @@
+/* Full page layout */
+.about-page {
+  height: 100vh;
+  width: 1250px;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #31add6, #f3e5f5);
+  padding: 80px 20px 60px;
+  color: #111;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* Back Button Styling */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(7, 6, 6);
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateX(-5px);
+}
+
+/* Card Common Styling */
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #111;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(17, 6, 6, 0.2);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #111;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+/* Descriptions */
+.section-description {
+  color: #111;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #111;
+}
+
+.form-input,
+.form-textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  background: rgba(146, 144, 144, 0.1);
+  color: #111;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #444;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 12px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 12px;
+  color: #111;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+}
+
+/* Social Section */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.social-icons a {
+  color: #181313cc;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card {
+    padding: 25px 20px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .submit-button {
+    font-size: 15px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 15px;
+  }
+
+  .social-icons {
+    font-size: 26px;
+  }
+}

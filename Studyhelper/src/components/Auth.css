@@ -1,0 +1,173 @@
+/* Reset & font */
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Full screen container */
+  .auth-container {
+    height: 100vh;
+    background: linear-gradient(135deg, #31add6, #f3e5f5);
+    width: 100vw;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Auth card styling with glass effect */
+  .auth-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: popUp 0.6s ease forwards;
+  }
+  
+  /* Title */
+  .auth-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Form input fields */
+  .auth-form input {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    margin: 0.6rem 0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    background: #eeebeb;
+    color: #060505;
+  }
+  
+  .auth-form input:focus {
+    border-color: #7b2ff7;
+    outline: none;
+    box-shadow: 0 0 5px rgba(123, 47, 247, 0.5);
+  }
+  
+  /* Password field wrapper with icon */
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #7b2ff7;
+    transition: 0.3s;
+  }
+  
+  .password-toggle:hover {
+    color: #a32cc4;
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  /* Submit button */
+  .auth-btn {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1rem;
+    background: linear-gradient(135deg, #7b2ff7, #5d8be0);
+    color: rgb(240, 233, 233);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(123, 47, 247, 0.4);
+  }
+  
+  .auth-btn:hover {
+    background: linear-gradient(135deg, #f107a3, #7b2ff7);
+  }
+  
+  /* Divider text */
+  .divider {
+    margin: 1.2rem 0;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  /* Social media icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .icon {
+    font-size: 1.6rem;
+    color: #555;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+    color: #7b2ff7;
+  }
+  
+  /* Toggle text (login <-> signup) */
+  .toggle-text {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .toggle-text span {
+    color: #7b2ff7;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.3rem;
+    transition: color 0.3s;
+  }
+  
+  .toggle-text span:hover {
+    color: #f107a3;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes popUp {
+    from {
+      transform: scale(0.95);
+      opacity: 0.7;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

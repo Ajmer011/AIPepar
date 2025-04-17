@@ -1,0 +1,129 @@
+.question-page {
+   
+        height: 100vh;
+        width: 1270px;
+        overflow-y: auto;
+        background: linear-gradient(135deg, #31add6, #f3e5f5);
+        padding: 80px 20px 60px;
+        color: #111;
+        font-family: 'Segoe UI', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        scroll-behavior: smooth;
+        position: relative;
+      }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 16px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-5px);
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #00ffff;
+  }
+  
+  .question-text,
+  .section-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f1f1f1;
+  }
+  
+  .year-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .chip {
+    background: #00c6ff55;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .probability-meter {
+
+    border-radius: 20px;
+    overflow: hidden;
+    height: 50px;
+    padding-bottom: 20px;
+  }
+  
+  .progress-bar {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    height: 100%;
+    color: rgb(17, 3, 3);
+    font-weight: bold;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .related-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .related-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .actions-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .action-button {
+    background: #ffffff22;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .action-button:hover {
+    background: #ffffff44;
+    transform: scale(1.05);
+  }
+  
